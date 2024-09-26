@@ -2,7 +2,23 @@ title: Just the Docs Template
 description: A starter template for a Jeykll site using the Just the Docs theme!
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://your-username.github.io/your-repo-name
 
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  Template Repository: https://github.com/your-username/your-repo-name
+
+# Add this section to include the blogs folder
+include:
+  - blogs
+
+# Configure the blogs as a collection
+collections:
+  blogs:
+    output: true
+    permalink: /:collection/:path/
+
+# Add blogs to the nav structure
+nav_external_links:
+  - title: Blogs
+    url: /blogs
+    hide_icon: false # set to true to hide the external link icon - defaults to false
